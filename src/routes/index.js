@@ -13,6 +13,7 @@ export default function Routes() {
     <Router>
 
       <Switch>
+        <Route path="/" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/login" component={Login} />
 
