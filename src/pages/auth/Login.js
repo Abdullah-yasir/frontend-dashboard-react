@@ -30,7 +30,7 @@ const Login = (props) => {
             <TextField label="Username" icon="user" />
             <TextField label="Password" type="password" />
             <button className="button-default">Login</button>
-            <p style={{ textAlign: 'center' }}>Don’t have an account?<a href="#">Register Now</a></p>
+            <p style={{ textAlign: 'center' }}>Don’t have an account?<a href="/signup"> Register Now!</a></p>
 
           </div>
         </div>

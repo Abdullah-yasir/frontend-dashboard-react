@@ -25,14 +25,12 @@
 // export default App;
 
 import './App.css';
-import Login from './pages/auth/Login';
-import Signup from './pages/auth/Signup';
+import Routes from './routes';
 
 
 function App() {
   return (
-    // <Login />
-    <Signup />
+    <Routes />
   );
 }
 

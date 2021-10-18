@@ -9,11 +9,8 @@ import IconButton from '../../components/IconButton';
 import DefaultBg from '../../components/DefaultBg';
 import CardSharp from '../../components/CardSharp';
 import OrSeperator from '../../components/OrSeperator';
-import TextField from '../../components/TextFields';
-
 
 const Signup = (props) => {
-
   return (
     <DefaultBg>
       <img alt="datalucent logo text center" src={logoTextCenter} className="logo-text-center" />
@@ -29,7 +26,8 @@ const Signup = (props) => {
           <IconButton label="Signup with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} />
           <IconButton label="Signup with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} />
           <OrSeperator />
-          <button className="button-default" style={{ marginBottom: 35 }}>Register Manually</button>
+          <button className="button-default" >Register Manually</button>
+          <p style={{ textAlign: 'center' }}>Already have an account?<a href="/login"> Login!</a></p>
         </div>
       </CardSharp>
     </DefaultBg >
