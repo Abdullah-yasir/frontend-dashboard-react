@@ -5,7 +5,9 @@ const Button = (props) => {
   const { label, icon, ...otherProps } = props;
   return (
     <button className="button" {...otherProps}>
-      <FontAwesomeIcon className="button-icon" icon={['fas', icon]} />
+      {icon ? (
+        <FontAwesomeIcon className="button-icon" icon={['fas', icon]} />
+      ) : null}
       <span className="button-label">{label}</span>
     </button>
   );

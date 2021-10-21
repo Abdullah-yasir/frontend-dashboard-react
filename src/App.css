@@ -294,7 +294,7 @@ span.sb-link-label.active {
 .button {
   background-color: var(--primary);
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid var(--primary);
   border-radius: 100px;
   padding: 8px 15px;
@@ -355,7 +355,8 @@ span.sb-link-label.active {
   margin-bottom: 0;
 }
 .modal-info {
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 .card {
   background-color: white;
@@ -395,9 +396,13 @@ span.sb-link-label.active {
 .radio-btn {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 .radio-label {
   margin-left: 10px;
+}
+.article-body {
+  margin: 0 100px;
+  margin-bottom: 50px;
 }
