@@ -3,6 +3,17 @@
   --primary: #19a79a;
   --line-faded: #e0e0e0;
 }
+body {
+  color: #454545;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+header {
+  background-color: white;
+  border-bottom: 1px solid var(--line-faded);
+}
 p {
   font-size: 14px;
   color: var(--text-dark);
@@ -11,6 +22,30 @@ a {
   font-size: 14px;
   color: #0066cc;
   text-decoration: none;
+}
+.screen {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f7f9f9;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.content-left,
+.content-right {
+  height: 100%;
+}
+.content-left {
+  flex: 1;
+  overflow: hidden;
+  background-color: white;
+  border-right: 1px solid var(--line-faded);
+}
+.content-right {
+  flex: 4;
 }
 .default-bg,
 .bg-content {
@@ -186,4 +221,25 @@ img.user-avatar-header {
 }
 img.logo-horizontal {
   width: 190px;
+}
+
+.dashboard-bg {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.bg-top-right,
+.bg-bottom-left {
+  width: 30%;
+}
+.bg-top-right {
+  position: absolute;
+  right: 1px;
+  top: -13px;
+}
+
+.bg-bottom-left {
+  position: absolute;
+  left: -30px;
+  bottom: 76px;
 }

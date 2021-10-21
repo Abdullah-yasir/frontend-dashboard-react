@@ -5,7 +5,7 @@ import logoHorizontal from "../assets/datalucent-logo-horizontal.png";
 const headerLinks = [
   { label: 'About Us', link: '/about' },
   { label: 'FAQ', link: '/faq' },
-  { label: 'Become a Partener', link: '/partener' },
+  { label: 'Become a Partner', link: '/partner' },
   { label: 'Privacy Plolicy', link: '/privacy' }
 ]
 
