@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import Button from '../components/Button';
+import { useDispatch } from 'react-redux';
+import { showModal } from '../store/actions';
 
 const sidebarLinks = [
   {
@@ -31,7 +33,7 @@ const Sidebar = (props) => {
   const { } = props;
   const [activeIndex, setActiveIndex] = useState(0);
 
-
+  const dispatch = useDispatch();
 
   const renderLinks = (link, index) => {
     const activeClass = index === activeIndex ? 'active' : '';
@@ -55,7 +57,11 @@ const Sidebar = (props) => {
         {sidebarLinks.map(renderLinks)}
       </ul>
       <div className="sb-btn">
-        <Button label="Add Social Media" icon="plus" />
+        <Button
+          label="Add Social Media"
+          icon="plus"
+          onClick={() => { dispatch(showModal(true)) }}
+        />
       </div>
     </div>
   );

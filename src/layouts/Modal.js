@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import logoImage from '../assets/datalucent-logo-icon.png';
 import Card from '../components/Card';
+import { showModal } from '../store/actions';
 
 const Modal = (props) => {
   const { logo, children } = props;
-
+  const dispatch = useDispatch();
   const { visible } = useSelector(state => state.Modal);
 
   return (
@@ -22,7 +23,7 @@ const Modal = (props) => {
         )
       }}>
         <div className="modal-body">
-          <FontAwesomeIcon icon={['fas', 'times']} className="modal-close" />
+          <FontAwesomeIcon icon={['fas', 'times']} className="modal-close" onClick={() => dispatch(showModal(false))} />
           {children}
         </div>
       </Card>
