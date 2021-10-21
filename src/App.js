@@ -8,18 +8,23 @@ import {
   faHandHoldingUsd, faMedal, faCog, faHourglassEnd, faPlus, faTimes
 } from '@fortawesome/free-solid-svg-icons';
 import Modal from './layouts/Modal';
+import { Provider, useSelector } from 'react-redux';
+import store from './store';
+
 
 
 library.add(faHandHoldingUsd, faHourglassEnd, faMedal, faCog, faPlus, faTimes);
 
 function App() {
   return (
-    <div className="app-root">
-      <Modal visible={false} >
-        this is conent
-      </Modal>
-      <Routes />
-    </div>
+    <Provider store={store}>
+      <div className="app-root">
+        <Modal>
+          this is conent
+        </Modal>
+        <Routes />
+      </div>
+    </Provider>
   );
 }
 
