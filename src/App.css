@@ -14,6 +14,16 @@ header {
   background-color: white;
   border-bottom: 1px solid var(--line-faded);
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  background-color: white;
+  border-top: 1px solid var(--line-faded);
+}
 p {
   font-size: 14px;
   color: var(--text-dark);
@@ -47,6 +57,7 @@ a {
 .content-right {
   flex: 4;
 }
+
 .default-bg,
 .bg-content {
   height: 100%;
@@ -215,12 +226,12 @@ img.logo-horizontal {
   align-items: center;
 }
 img.user-avatar-header {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
 }
 img.logo-horizontal {
-  width: 190px;
+  width: 140px;
 }
 
 .dashboard-bg {
