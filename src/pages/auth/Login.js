@@ -19,9 +19,9 @@ const Login = (props) => {
       <img alt="datalucent logo text center" src={logoTextCenter} className="logo-text-center" />
       <CardSharp style={{ width: 500, }}>
         <div className="content-center-h">
-          <h3 className='heading-1' style={{ textAlign: 'center' }} >
+          <h1 className='heading-1' style={{ textAlign: 'center' }} >
             Sign In
-          </h3>
+          </h1>
           <IconButton label="Sign in with Google" image={googleIcon} style={{ marginBottom: 20 }} />
           <IconButton label="Sign in with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} />
           <IconButton label="Sign in with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} />
