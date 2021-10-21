@@ -14,6 +14,9 @@ header {
   background-color: white;
   border-bottom: 1px solid var(--line-faded);
 }
+ul {
+  list-style: none;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -222,7 +225,6 @@ img.logo-horizontal {
 }
 .nav-right {
   display: flex;
-  list-style: none;
   align-items: center;
 }
 img.user-avatar-header {

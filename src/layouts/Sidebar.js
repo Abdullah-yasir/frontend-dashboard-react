@@ -10,17 +10,17 @@ const sidebarLinks = [
   },
   {
     label: "Rewards",
-    icon: "hand-holding-usd",
+    icon: "medal",
     link: "/offers",
   },
   {
     label: "Status",
-    icon: "hand-holding-usd",
+    icon: "hourglass-end",
     link: "/offers",
   },
   {
     label: "Settings",
-    icon: "hand-holding-usd",
+    icon: "cog",
     link: "/offers",
     nested: []
   },
@@ -42,8 +42,6 @@ const Sidebar = (props) => {
   }
   return (
     <div>
-      somsdgl
-      <FontAwesomeIcon icon={['fas', 'accessible-icon']} />
       <ul>
         {sidebarLinks.map(renderLinks)}
       </ul>
