@@ -60,7 +60,10 @@ const Sidebar = (props) => {
         <Button
           label="Add Social Media"
           icon="plus"
-          onClick={() => { dispatch(showModal(true)) }}
+          onClick={() => {
+            dispatch(showModal(true));
+            window.location.href = '/add-social-media/media';
+          }}
         />
       </div>
     </div>

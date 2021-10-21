@@ -8,7 +8,8 @@ import { showModal } from '../store/actions';
 const Modal = (props) => {
   const { logo, children } = props;
   const dispatch = useDispatch();
-  const { visible } = useSelector(state => state.Modal);
+  // const { visible } = useSelector(state => state.Modal);
+  const visible = window.location.href.includes('/add-social-media')
 
   return (
     <section className="modal" style={{ display: visible ? 'flex' : 'none' }}>
@@ -23,7 +24,14 @@ const Modal = (props) => {
         )
       }}>
         <div className="modal-body">
-          <FontAwesomeIcon icon={['fas', 'times']} className="modal-close" onClick={() => dispatch(showModal(false))} />
+          <FontAwesomeIcon
+            icon={['fas', 'times']}
+            className="modal-close"
+            onClick={() => {
+              // dispatch(showModal(false))
+              window.location.href = '/dashboard/offers';
+            }}
+          />
           {children}
         </div>
       </Card>
