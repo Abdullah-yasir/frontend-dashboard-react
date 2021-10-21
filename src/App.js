@@ -31,11 +31,11 @@ import Routes from './routes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faHandHoldingUsd, faMedal, faCog, faHourglassEnd
+  faHandHoldingUsd, faMedal, faCog, faHourglassEnd, faPlus
 } from '@fortawesome/free-solid-svg-icons';
 
 
-library.add(faHandHoldingUsd, faHourglassEnd, faMedal, faCog);
+library.add(faHandHoldingUsd, faHourglassEnd, faMedal, faCog, faPlus);
 
 function App() {
   return (

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 
 const sidebarLinks = [
   {
@@ -53,6 +54,9 @@ const Sidebar = (props) => {
       <ul>
         {sidebarLinks.map(renderLinks)}
       </ul>
+      <div className="sb-btn">
+        <Button label="Add Social Media" icon="plus" />
+      </div>
     </div>
   );
 }
