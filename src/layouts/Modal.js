@@ -13,16 +13,7 @@ const Modal = (props) => {
 
   return (
     <section className="modal" style={{ display: visible ? 'flex' : 'none' }}>
-      <Card headerComponent={() => {
-        if (!logo) return null;
-        return (
-          <div className="modal-logo-top">
-            <div className="modal-logo">
-              <img src={logoImage} alt="modal-logo" className="modal-logo-img" />
-            </div>
-          </div>
-        )
-      }}>
+      <Card>
         <div className="modal-body">
           <FontAwesomeIcon
             icon={['fas', 'times']}
@@ -32,9 +23,15 @@ const Modal = (props) => {
               window.location.href = '/dashboard/offers';
             }}
           />
+          <div className="modal-logo-top">
+            <div className="modal-logo">
+              <img src={logoImage} alt="modal-logo" className="modal-logo-img" />
+            </div>
+          </div>
           {children}
         </div>
       </Card>
+
     </section>
   );
 }

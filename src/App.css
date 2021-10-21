@@ -326,10 +326,11 @@ span.sb-link-label.active {
   z-index: 9999;
 }
 .modal-body {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   padding-top: 10px;
 }
 .modal-close {
@@ -337,6 +338,12 @@ span.sb-link-label.active {
   cursor: pointer;
   right: 5px;
   top: 5px;
+}
+.modal-logo {
+  width: 64px;
+}
+.modal-logo-img {
+  width: 100%;
 }
 .card {
   background-color: white;
