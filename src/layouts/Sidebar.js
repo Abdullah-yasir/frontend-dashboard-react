@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 import { useDispatch } from 'react-redux';
 import { showModal } from '../store/actions';
+import { useHistory } from 'react-router';
+
 
 const sidebarLinks = [
   {
@@ -30,7 +32,8 @@ const sidebarLinks = [
 ]
 
 const Sidebar = (props) => {
-  const { } = props;
+  const history = useHistory();
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const dispatch = useDispatch();
@@ -62,6 +65,7 @@ const Sidebar = (props) => {
           icon="plus"
           onClick={() => {
             dispatch(showModal(true));
+            // history.push('/add-social-media/media')
             window.location.href = '/add-social-media/media';
           }}
         />
