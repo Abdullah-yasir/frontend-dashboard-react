@@ -359,9 +359,7 @@ span.sb-link-label.active {
   margin-top: 10px;
   margin-bottom: 25px;
 }
-.article-body {
-  max-width: 500px;
-}
+
 .card {
   background-color: white;
   border: 1 px solid white;
@@ -408,9 +406,39 @@ span.sb-link-label.active {
 }
 .article-body {
   margin: 0 100px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  max-width: 500px;
 }
 .creds-input-fields {
   display: flex;
   justify-content: space-between;
+}
+.privacy-container {
+  max-height: 300px;
+  overflow-y: scroll;
+  margin: 10px 0;
+  padding-right: 10px;
+}
+
+/*customize scroll bar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2f7eb9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  width: 14px;
 }
