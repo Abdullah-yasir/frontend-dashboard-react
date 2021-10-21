@@ -3,18 +3,22 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import SocialMediaData from "../layouts/SocialMediaData";
+import SocialMediaModal from "../layouts/SocialMediaModal";
+import DataAcquisition from "../pages/modal/DataAcquisition";
+import SocialMediaData from "../pages/modal/SocialMediaData";
 
 export default function ModalRoutes() {
   return (
     <Router basename="/add-social-media/">
-      <Switch>
-        <Route exact path="/media" component={SocialMediaData} />
-        <Route exact path="/data" component={(Login => 'some content 2')} />
-        <Route exact path="/creds" component={(Login => 'some content 3')} />
-        <Route exact path="/privacy" component={(Login => 'some content 4')} />
+      <SocialMediaModal>
+        <Switch>
+          <Route exact path="/media" component={SocialMediaData} />
+          <Route exact path="/data" component={DataAcquisition} />
+          <Route exact path="/creds" component={(Login => 'some content 3')} />
+          <Route exact path="/privacy" component={(Login => 'some content 4')} />
+        </Switch>
+      </SocialMediaModal>
 
-      </Switch>
     </Router>
   );
 }
