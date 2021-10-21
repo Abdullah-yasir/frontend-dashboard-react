@@ -30,7 +30,9 @@ import './App.css';
 import Routes from './routes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faHandHoldingUsd, faMedal, faCog, faHourglassEnd } from '@fortawesome/free-solid-svg-icons';
+import {
+  faHandHoldingUsd, faMedal, faCog, faHourglassEnd
+} from '@fortawesome/free-solid-svg-icons';
 
 
 library.add(faHandHoldingUsd, faHourglassEnd, faMedal, faCog);

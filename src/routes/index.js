@@ -26,7 +26,7 @@ export default function Routes() {
 
       <Screen>
         <Switch>
-          <Route path="/dashboard/" component={Home} />
+          <Route path="/dashboard/offers" component={Home} />
         </Switch>
       </Screen>
     </Router>

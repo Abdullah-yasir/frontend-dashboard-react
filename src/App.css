@@ -16,6 +16,7 @@ header {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 footer {
   position: fixed;
@@ -58,7 +59,7 @@ a {
   border-right: 1px solid var(--line-faded);
 }
 .content-right {
-  flex: 4;
+  flex: 5;
 }
 
 .default-bg,
@@ -256,4 +257,33 @@ img.logo-horizontal {
   position: absolute;
   left: -30px;
   bottom: 76px;
+}
+.sidebar-link {
+  padding: 20px 0;
+  padding-left: 25px;
+}
+
+.sb-link-content {
+  display: flex;
+}
+.sb-link-icon-container {
+  width: 40px;
+}
+.sb-link-icon {
+  font-size: 18px;
+  width: 70px;
+  color: var(--text-dark);
+}
+span.sb-link-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+.sb-link-icon.active,
+span.sb-link-label.active {
+  color: white;
+}
+
+.sidebar-link.active {
+  background-color: var(--primary) !important;
 }
