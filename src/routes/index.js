@@ -23,6 +23,9 @@ export default function Routes() {
       <Screen>
         <Switch>
           <Route path="/dashboard/offers" component={Home} />
+          <Route path="/dashboard/rewards" component={() => 'rewards'} />
+          <Route path="/dashboard/status" component={() => 'status'} />
+          <Route path="/dashboard/settings" component={() => 'settings'} />
         </Switch>
       </Screen>
     </Router>

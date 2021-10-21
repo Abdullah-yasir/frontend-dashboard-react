@@ -353,3 +353,26 @@ span.sb-link-label.active {
 .card-body {
   padding: 10px;
 }
+.number-tabs {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.number-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--text-dark);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+.number-bg-line {
+  border-bottom: 1px solid var(--text-dark);
+  width: 130px;
+}
+.number-circle.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}

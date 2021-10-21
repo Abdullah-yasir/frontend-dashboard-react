@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+// import { useDispatch, useSelector } from 'react-redux';
 import logoImage from '../assets/datalucent-logo-icon.png';
 import Card from '../components/Card';
-import { showModal } from '../store/actions';
+// import { showModal } from '../store/actions';
 
 const Modal = (props) => {
   const { logo, children } = props;
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   // const { visible } = useSelector(state => state.Modal);
   const visible = window.location.href.includes('/add-social-media')
 
@@ -31,7 +31,6 @@ const Modal = (props) => {
           {children}
         </div>
       </Card>
-
     </section>
   );
 }

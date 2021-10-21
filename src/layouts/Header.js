@@ -6,7 +6,7 @@ const headerLinks = [
   { label: 'About Us', link: '/about' },
   { label: 'FAQ', link: '/faq' },
   { label: 'Become a Partner', link: '/partner' },
-  { label: 'Privacy Plolicy', link: '/privacy' }
+  { label: 'Privacy Policy', link: '/privacy' }
 ]
 
 const Header = (props) => {
