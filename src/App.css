@@ -410,3 +410,7 @@ span.sb-link-label.active {
   margin: 0 100px;
   margin-bottom: 50px;
 }
+.creds-input-fields {
+  display: flex;
+  justify-content: space-between;
+}

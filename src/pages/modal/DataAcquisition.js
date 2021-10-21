@@ -28,7 +28,7 @@ const DataAcquisition = (props) => {
           })}
         </form>
       </div>
-      <Button label="Continue" style={{ marginLeft: 'auto' }} onClick={() => history.push("/data")} />
+      <Button label="Continue" style={{ marginLeft: 'auto' }} onClick={() => history.push("/creds")} />
     </div>
   )
 }

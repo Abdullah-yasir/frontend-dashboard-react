@@ -6,6 +6,7 @@ import {
 import SocialMediaModal from "../layouts/SocialMediaModal";
 import DataAcquisition from "../pages/modal/DataAcquisition";
 import SocialMediaData from "../pages/modal/SocialMediaData";
+import SocialMediaInfo from "../pages/modal/SocialMediaInfo";
 
 export default function ModalRoutes() {
   return (
@@ -14,7 +15,7 @@ export default function ModalRoutes() {
         <Switch>
           <Route exact path="/media" component={SocialMediaData} />
           <Route exact path="/data" component={DataAcquisition} />
-          <Route exact path="/creds" component={(Login => 'some content 3')} />
+          <Route exact path="/creds" component={SocialMediaInfo} />
           <Route exact path="/privacy" component={(Login => 'some content 4')} />
         </Switch>
       </SocialMediaModal>
