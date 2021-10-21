@@ -345,6 +345,18 @@ span.sb-link-label.active {
 .modal-logo-img {
   width: 100%;
 }
+.modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal-subhead {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.modal-info {
+  margin-top: 5px;
+}
 .card {
   background-color: white;
   border: 1 px solid white;
@@ -375,4 +387,15 @@ span.sb-link-label.active {
   background-color: var(--primary);
   border-color: var(--primary);
   color: white;
+}
+.row-center {
+  display: flex;
+  justify-content: center;
+}
+.radio-btn {
+  display: flex;
+  align-items: center;
+}
+.radio-label {
+  margin-left: 10px;
 }
