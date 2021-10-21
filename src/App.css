@@ -333,6 +333,7 @@ span.sb-link-label.active {
   align-items: center;
   padding-top: 10px;
 }
+
 .modal-close {
   position: absolute;
   cursor: pointer;
@@ -357,6 +358,9 @@ span.sb-link-label.active {
 .modal-info {
   margin-top: 10px;
   margin-bottom: 25px;
+}
+.article-body {
+  max-width: 500px;
 }
 .card {
   background-color: white;
