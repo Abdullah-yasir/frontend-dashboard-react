@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Routes from './routes';
 
@@ -16,12 +15,10 @@ library.add(faHandHoldingUsd, faHourglassEnd, faMedal, faCog, faPlus, faTimes);
 function App() {
   return (
     <div className="app-root">
-      <Modal visible={true} >
+      <Modal visible={false} >
         this is conent
       </Modal>
-      <BrowserRouter basename="/">
-        <Routes />
-      </BrowserRouter>
+      <Routes />
     </div>
   );
 }

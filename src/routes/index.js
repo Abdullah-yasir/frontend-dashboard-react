@@ -11,13 +11,9 @@ import Home from "../pages/dashboard/Home";
 
 import Screen from "../layouts/Screen";
 
-
-
-
-
 export default function Routes() {
   return (
-    <Router>
+    <Router basename="/">
       <Switch>
         <Route exact path="/" component={Login} />
         <Route path="/signup" component={Signup} />

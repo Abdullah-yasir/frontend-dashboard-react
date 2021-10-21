@@ -330,7 +330,7 @@ span.sb-link-label.active {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .modal-close {
   position: absolute;
