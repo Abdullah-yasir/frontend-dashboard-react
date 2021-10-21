@@ -7,6 +7,14 @@ const numbers = [
   { link: '/privay' },
 ]
 
+const radioOptions = [
+  { name: 'fb', label: 'Facebook' },
+  { name: 'gg', label: 'Google' },
+  { name: 'ig', label: 'Instagram' },
+  { name: 'tt', label: 'Twitter' },
+  { name: 'li', label: 'Linkedin' }
+]
+
 const SocialMediaData = (props) => {
   return (
     <article>
@@ -33,10 +41,14 @@ const SocialMediaData = (props) => {
       <p>Select social media to download data.</p>
       <div className="media-options">
         <form>
-          <div className="radio-btn">
-            <input className="radio-icon" name="facebook" type="radio" />
-            <label className="radio-label" for="facebook">Facebook</label>
-          </div>
+          {radioOptions.map((radio) => {
+            return (
+              <div className="radio-btn">
+                <input className="radio-icon" name='option' type="radio" />
+                <label className="radio-label" for={radio.name}>{radio.label}</label>
+              </div>
+            );
+          })}
         </form>
       </div>
     </article>

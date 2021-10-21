@@ -395,6 +395,8 @@ span.sb-link-label.active {
 .radio-btn {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .radio-label {
   margin-left: 10px;
