@@ -23,11 +23,17 @@
 // }
 
 // export default App;
+
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Routes from './routes';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
+
+
+library.add(faHandHoldingUsd)
 
 function App() {
   return (

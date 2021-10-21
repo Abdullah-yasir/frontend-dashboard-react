@@ -226,9 +226,10 @@ img.logo-horizontal {
   align-items: center;
 }
 img.user-avatar-header {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  border: 1px solid var(--line-faded);
 }
 img.logo-horizontal {
   width: 140px;
