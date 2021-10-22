@@ -9,6 +9,15 @@ const offers = [
   { brand: 'ABC', offer: `You will be sharing the data from the account you choose.`, image: '' },
   { brand: 'GRD', offer: `You will be sharing the data from the account you choose.`, image: '' },
   { brand: 'GRp', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'ABC', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'GRD', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'GRp', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'ABC', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'GRD', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'GRp', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'ABC', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'GRD', offer: `You will be sharing the data from the account you choose.`, image: '' },
+  { brand: 'GRp', offer: `You will be sharing the data from the account you choose.`, image: '' },
 ]
 
 const OfferCard = (props) => {

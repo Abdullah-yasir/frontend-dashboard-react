@@ -6,6 +6,8 @@ import Footer from './Footer';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
+import logoIcon from '../assets/datalucent-logo-icon.png'
+
 
 const Screen = (props) => {
   const { children } = props;
@@ -19,6 +21,10 @@ const Screen = (props) => {
         <main className="content-right">
           <CornerBg>
             {children}
+            <div className="screen-content-footer">
+              <div className="footer-line" />
+              <img alt="logo-icon" className="footer-icon" src={logoIcon} />
+            </div>
           </CornerBg>
         </main>
       </div>

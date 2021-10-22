@@ -481,6 +481,7 @@ span.sb-link-label.active {
   width: 100%;
   height: 100%;
   position: absolute;
+  overflow-y: auto;
 }
 .offer-card {
   background-color: white;
@@ -497,7 +498,6 @@ span.sb-link-label.active {
 }
 .container {
   padding: 10px;
-  overflow-y: scroll;
 }
 .flex-row-wrap {
   display: flex;
@@ -511,4 +511,21 @@ span.sb-link-label.active {
 }
 .group-button:last-child {
   margin-right: 0;
+}
+
+.screen-content-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 250px;
+  padding: 0 100px;
+}
+.footer-line {
+  border-bottom: 1px solid var(--line-faded);
+  margin: 10px 0;
+  width: 100%;
+}
+.footer-icon {
+  width: 50px;
 }
