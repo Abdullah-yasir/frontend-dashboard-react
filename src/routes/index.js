@@ -7,9 +7,12 @@ import {
 
 import Login from "../pages/auth/Login";
 import Signup from "../pages/auth/Signup";
-import Home from "../pages/dashboard/Home";
+import Status from "../pages/dashboard/Status";
 
 import Screen from "../layouts/Screen";
+import Offers from "../pages/dashboard/Offers";
+import Rewards from "../pages/dashboard/Rewards";
+import Settings from "../pages/dashboard/Settings";
 
 export default function Routes() {
   return (
@@ -19,15 +22,17 @@ export default function Routes() {
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />
 
-
         <Screen>
-          <Route exact path="/dashboard/offers" component={Home} />
-          <Route exact path="/dashboard/rewards" component={() => 'rewards'} />
-          <Route exact path="/dashboard/status" component={() => 'status'} />
-          <Route exact path="/dashboard/settings" component={() => 'settings'} />
+          <Route exact path="/dashboard/offers" component={Offers} />
+          <Route exact path="/dashboard/rewards" component={Rewards} />
+          <Route exact path="/dashboard/status" component={Status} />
+          <Route exact path="/dashboard/settings" component={Settings} />
         </Screen>
       </Switch>
     </Router>
   );
 }
+
+// create seperate app for login and register
+// after successful login and confirmation from server redirect to actual app
 
