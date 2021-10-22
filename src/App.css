@@ -492,9 +492,9 @@ span.sb-link-label.active {
   overflow-y: auto;
 }
 .box-shadow {
-  -webkit-box-shadow: 2px 4px 4px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 4px 4px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 4px 4px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 4px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 4px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 3px 4px -5px rgba(0, 0, 0, 0.75);
 }
 .offer-card {
   background-color: white;

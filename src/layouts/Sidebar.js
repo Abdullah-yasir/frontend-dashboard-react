@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import Button from '../components/Button';
 import { useDispatch } from 'react-redux';
-import { showModal } from '../store/actions';
 import { useHistory } from 'react-router';
+import { showModal } from '../store/actions';
+
+import Button from '../components/Button';
 
 
 const sidebarLinks = [
@@ -55,7 +56,7 @@ const Sidebar = (props) => {
   }
 
   return (
-    <div>
+    <div style={{ minWidth: 228 }}>
       <ul>
         {sidebarLinks.map(renderLinks)}
       </ul>
