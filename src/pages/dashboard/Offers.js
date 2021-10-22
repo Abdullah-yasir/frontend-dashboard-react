@@ -23,12 +23,12 @@ const offers = [
 const OfferCard = (props) => {
   const { brand, offer, brandLogo } = props;
   return (
-    <article className="offer-card">
+    <article className="offer-card box-shadow">
       <img alt="brand logo" src={brandLogo} />
       <p>Brand: <span className="offer-card-brand">{brand}</span></p>
       <p>{offer}</p>
       <div className="buttons-row" style={{ justifyContent: 'flex-end' }}>
-        <Button label="Reject" classes="button-outline-faded group-button" />
+        <Button label="Reject" classes="button-outline group-button" />
         <Button label="Accecpt" classes="button-outline-primary group-button" />
       </div>
     </article>

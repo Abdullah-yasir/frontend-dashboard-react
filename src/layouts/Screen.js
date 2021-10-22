@@ -28,6 +28,7 @@ const Screen = (props) => {
           </CornerBg>
         </main>
       </div>
+      <div className="footer-height-compensator" />
       <Footer />
     </div>
   );

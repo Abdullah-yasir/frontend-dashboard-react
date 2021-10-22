@@ -359,9 +359,17 @@ span.sb-link-label.active {
   border-color: 1px solid var(--text-dark);
   color: var(--text-dark);
 }
+.button-outline:hover {
+  background-color: var(--text-dark);
+  color: white;
+}
 .button-outline-primary {
   border-color: 1px solid var(--primary);
   color: var(--primary);
+}
+.button-outline-primary:hover {
+  background-color: var(--primary);
+  color: white;
 }
 .button-outline-faded {
   border-color: 1px solid var(--text-faded);
@@ -482,6 +490,11 @@ span.sb-link-label.active {
   height: 100%;
   position: absolute;
   overflow-y: auto;
+}
+.box-shadow {
+  -webkit-box-shadow: 2px 4px 4px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 4px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 4px -5px rgba(0, 0, 0, 0.75);
 }
 .offer-card {
   background-color: white;
