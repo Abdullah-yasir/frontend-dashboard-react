@@ -10,7 +10,9 @@ const CornerBg = (props) => {
     <div className="dashboard-bg">
       <img className="bg-top-right" src={bgTopRight} alt="bg" />
       <img className="bg-bottom-left" src={bgBottomLeft} alt="bg" />
-      {children}
+      <div className="bg-overlay">
+        {children}
+      </div>
     </div>
   )
 }
