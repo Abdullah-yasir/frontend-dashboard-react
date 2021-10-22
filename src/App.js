@@ -6,7 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faHandHoldingUsd, faMedal, faCog, faHourglassEnd, faPlus, faTimes
 } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagramSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { Provider } from 'react-redux';
 
 import store from './store';
@@ -22,9 +22,9 @@ library.add(
   faCog,
   faPlus,
   faTimes,
-  faFacebook,
-  faInstagram,
-  faTwitter
+  faFacebookSquare,
+  faInstagramSquare,
+  faTwitterSquare
 );
 
 function App() {
