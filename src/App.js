@@ -1,19 +1,31 @@
 
-import React from 'react';
 import './App.css';
-import Routes from './routes';
+import React from 'react';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faHandHoldingUsd, faMedal, faCog, faHourglassEnd, faPlus, faTimes
 } from '@fortawesome/free-solid-svg-icons';
-import Modal from './layouts/Modal';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Provider } from 'react-redux';
+
 import store from './store';
+import Routes from './routes';
+import Modal from './layouts/Modal';
 import ModalRoutes from './routes/modal';
 
 
-library.add(faHandHoldingUsd, faHourglassEnd, faMedal, faCog, faPlus, faTimes);
+library.add(
+  faHandHoldingUsd,
+  faHourglassEnd,
+  faMedal,
+  faCog,
+  faPlus,
+  faTimes,
+  faFacebook,
+  faInstagram,
+  faTwitter
+);
 
 function App() {
   return (
