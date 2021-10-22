@@ -136,10 +136,10 @@ const PrivacyPolicy = (props) => {
         </p>
       </div>
       <div className="radio-btn" style={{ justifyContent: 'center', marginBottom: 15 }}>
-        <input className="radio-icon" name='agreement' type="checkbox" checked />
+        <input className="radio-icon" name='agreement' type="checkbox" />
         <label className="radio-label" for="agreement">I agree to the Terms and Conditions. </label>
       </div>
-      <Button label="Continue" style={{ margin: '0 auto' }} onClick={() => history.push("/privacy")} />
+      <Button label="Continue" style={{ margin: '0 auto' }} onClick={() => window.location.href = '/dashboard/offers'} />
     </div>
   )
 }

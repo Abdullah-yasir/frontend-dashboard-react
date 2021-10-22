@@ -422,7 +422,8 @@ span.sb-link-label.active {
 
 /*customize scroll bar*/
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  margin: 4px;
 }
 
 /* Track */
