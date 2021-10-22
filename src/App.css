@@ -502,6 +502,7 @@ span.sb-link-label.active {
   padding: 20px;
   margin: 5px;
   width: 350px;
+  opacity: 0.9;
 }
 .offer-card-brand {
   font-weight: bold;
