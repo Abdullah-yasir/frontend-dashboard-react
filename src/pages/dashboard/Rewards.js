@@ -16,7 +16,6 @@ const OfferCard = (props) => {
       <img alt="brand logo" src={brandLogo} />
       <p>Brand: <span className="offer-card-brand">{brand}</span></p>
       <p>{offer}</p>
-
     </article>
   );
 }
