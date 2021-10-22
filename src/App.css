@@ -486,5 +486,29 @@ span.sb-link-label.active {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  z-index: 999;
+  margin: 5px;
+  width: 350px;
+}
+.offer-card-brand {
+  font-weight: bold;
+}
+.buttons-row {
+  display: flex;
+}
+.container {
+  padding: 10px;
+  overflow-y: scroll;
+}
+.flex-row-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.group-button {
+  margin: 0 10px;
+}
+.group-button:first-child {
+  margin-left: 0;
+}
+.group-button:last-child {
+  margin-right: 0;
 }
