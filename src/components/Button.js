@@ -2,9 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Button = (props) => {
-  const { label, icon, ...otherProps } = props;
+  const { label, icon, classes, ...otherProps } = props;
+
   return (
-    <button className="button" {...otherProps}>
+    <button className={`button ${classes}`} {...otherProps}>
       {icon ? (
         <FontAwesomeIcon className="button-icon" icon={['fas', icon]} />
       ) : null}

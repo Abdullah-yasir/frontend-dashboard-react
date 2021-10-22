@@ -318,12 +318,30 @@ span.sb-link-label.active {
   align-items: center;
   cursor: pointer;
 }
+
 .button:hover {
   opacity: 0.9;
 }
 .button-icon {
   font-size: 14px;
   margin-right: 10px;
+}
+.button-outline,
+.button-outline-primary,
+.button-outline-faded {
+  background-color: transparent;
+}
+.button-outline {
+  border-color: 1px solid var(--text-dark);
+  color: var(--text-dark);
+}
+.button-outline-primary {
+  border-color: 1px solid var(--primary);
+  color: var(--primary);
+}
+.button-outline-faded {
+  border-color: 1px solid var(--text-faded);
+  color: var(--text-faded);
 }
 .sb-btn {
   display: flex;
