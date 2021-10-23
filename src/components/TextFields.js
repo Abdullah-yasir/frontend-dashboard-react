@@ -8,9 +8,8 @@ const TextField = (props) => {
   return <div className="text-field-container">
     <label className="text-field-label">{label}</label>
     <div className="text-field-icon-container">
-      <FontAwesomeIcon icon="user" />
       <input className="text-field" {...otherProps} />
-      <FontAwesomeIcon name="user" color="black" />
+      <FontAwesomeIcon icon={['fas', icon]} color="black" />
     </div>
   </div>
 }
