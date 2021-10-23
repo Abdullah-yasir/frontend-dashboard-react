@@ -5,9 +5,7 @@ import CornerBg from '../components/CornerBg';
 import Footer from './Footer';
 import Header from './Header';
 import Sidebar from './Sidebar';
-
-import logoIcon from '../assets/datalucent-logo-icon.png'
-
+import ContentEndIndicator from '../components/ContentEndIndicator';
 
 const Screen = (props) => {
   const { children } = props;
@@ -19,16 +17,13 @@ const Screen = (props) => {
           <Sidebar />
         </aside>
         <main className="content-right">
-          <CornerBg>
+          <CornerBg scrollable>
             {children}
-            <div className="screen-content-footer">
-              <div className="footer-line" />
-              <img alt="logo-icon" className="footer-icon" src={logoIcon} />
-            </div>
+            <ContentEndIndicator />
           </CornerBg>
         </main>
       </div>
-      <div className="footer-height-compensator" />
+      {/* <div className="footer-height-compensator" /> */}
       <Footer />
     </div>
   );

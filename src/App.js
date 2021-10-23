@@ -32,12 +32,12 @@ library.add(
 function App() {
   return (
     <Provider store={store}>
-      <div className="app-root">
-        <Modal>
-          <ModalRoutes />
-        </Modal>
-        <Routes />
-      </div>
+      {/* <div className="app-root"> */}
+      <Modal>
+        <ModalRoutes />
+      </Modal>
+      <Routes />
+      {/* </div> */}
     </Provider>
   );
 }

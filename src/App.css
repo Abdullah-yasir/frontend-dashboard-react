@@ -50,6 +50,7 @@ a {
 ::-webkit-scrollbar-track {
   border-radius: 10px;
   background: #e0e0e0;
+  margin-bottom: 104px;
 }
 
 /* Handle */
@@ -542,4 +543,12 @@ span.sb-link-label.active {
 }
 .footer-icon {
   width: 50px;
+}
+.sub-menu {
+  width: 200px;
+  border-right: 1px solid var(--line-faded);
+}
+.sub-menu-link {
+}
+.sub-menu-link.active {
 }
