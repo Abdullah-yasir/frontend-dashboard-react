@@ -1,5 +1,6 @@
 :root {
-  --text-dark: #454545;
+  --text-dark: rgb(69, 69, 69);
+  --primary-faded: #19a79b13;
   --primary: #19a79a;
   --line-faded: #e0e0e0;
 }
@@ -244,7 +245,7 @@ ul.footer-icons li {
   margin-bottom: 16px;
 }
 .text-field-label {
-  color: #454545;
+  color: var(--text-dark);
 }
 
 .text-field {
@@ -556,10 +557,23 @@ span.sb-link-label.active {
 .sub-menu {
   width: 200px;
   border-right: 1px solid var(--line-faded);
+  background-color: rgba(255, 255, 255, 0.9);
 }
-.sub-menu-link {
+.submenu-title {
+  border-bottom: 1px solid var(--line-faded);
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-.sub-menu-link.active {
+.submenu-link-item {
+  width: 100%;
+}
+.submenu-title,
+.submenu-link-item {
+  padding: 10px 20px;
+}
+.submenu-link-item.active {
+  border-right: 3px solid var(--primary);
+  background-color: var(--primary-faded);
 }
 .content-footer-container {
   width: 100%;
@@ -576,7 +590,8 @@ span.sb-link-label.active {
 .no.padding {
   padding: 0 !important;
 }
-
+.sub-menu {
+}
 /* .py-1 {
   padding-top: 10px;
   padding-bottom: 10px;
