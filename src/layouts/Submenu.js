@@ -1,13 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useRouteMatch } from 'react-router-dom';
+import TitleBar from '../components/TitleBar';
 
 const Submenu = (props) => {
-  const { links, baseUrl, children } = props;
+  const { links, baseUrl, children, title } = props;
 
   return (
     <div className="settings-layout full height">
       <div className="sub-menu full height">
-        <div className="submenu-title">Settings</div>
+        <TitleBar title={title} />
         <ul className="full height no margin">
           {links.map((link) => {
             return (

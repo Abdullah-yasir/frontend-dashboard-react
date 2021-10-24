@@ -17,8 +17,10 @@ import Scrollable from "../components/Scrollable";
 import Dashboard from "../layouts/Dashboard";
 import Submenu from "../layouts/Submenu";
 import ChangePassword from "../pages/dashboard/settings/ChangePassword";
-import UpdateData from "../pages/dashboard/settings/UpdateData";
+import UpdateData from "../pages/dashboard/settings/UpdateDataManual";
 import DeleteAccount from "../pages/dashboard/settings/DeleteAccount";
+import UpdateDataAutomated from "../pages/dashboard/settings/UpdateDataAutomated";
+import UpdateDataManual from "../pages/dashboard/settings/UpdateDataManual";
 
 const settingsRootLinks = [
   { label: 'Edit Profile', link: '/edit-profile', active: true },
@@ -26,6 +28,11 @@ const settingsRootLinks = [
   { label: 'Update Data', link: '/update-data' },
   { label: 'Delete Account', link: '/delete-account' },
 ];
+
+const updateDataLinks = [
+  { label: 'Automated', link: '/automated', active: true },
+  { label: 'Manual', link: '/manual' },
+]
 
 
 
@@ -58,7 +65,14 @@ export default function Routes() {
                   <Route path="/dashboard/settings/edit-profile" component={EditProfile} />
                   <Route path="/dashboard/settings/change-password" component={ChangePassword} />
                   <Route path="/dashboard/settings/delete-account" component={DeleteAccount} />
-                  <Route path="/dashboard/settings/update-data" component={UpdateData} />
+                  <Route path="/dashboard/settings/update-data">
+                    <Submenu title="Update Data" baseUrl="/dashboard/settings/update-data" links={updateDataLinks}>
+                      <Switch>
+                        <Route path="/dashboard/settings/update-data/automated" component={UpdateDataAutomated} />
+                        <Route path="/dashboard/settings/update-data/manual" component={UpdateDataManual} />
+                      </Switch>
+                    </Submenu>
+                  </Route>
                 </Switch>
               </Submenu>
             </Route>

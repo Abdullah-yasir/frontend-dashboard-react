@@ -1,11 +1,11 @@
 import React from 'react';
 
-const UpdateData = (props) => {
+const UpdateDataManual = (props) => {
   return (
     <section className="full width height" >
-      update data
+      update data manual
     </section>
   );
 }
 
-export default UpdateData;
+export default UpdateDataManual;
