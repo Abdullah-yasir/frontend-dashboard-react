@@ -12,17 +12,17 @@ const sidebarLinks = [
   {
     label: "Offers",
     icon: "hand-holding-usd",
-    link: "/dashboard/offers",
+    link: "/dashboard/page/content/offers",
   },
   {
     label: "Rewards",
     icon: "medal",
-    link: "/dashboard/rewards",
+    link: "/dashboard/page/content/rewards",
   },
   {
     label: "Status",
     icon: "hourglass-end",
-    link: "/dashboard/status",
+    link: "/dashboard/page/content/status",
   },
   {
     label: "Settings",
@@ -33,7 +33,6 @@ const sidebarLinks = [
 ]
 
 const Sidebar = (props) => {
-  const history = useHistory();
 
   const [activeIndex, setActiveIndex] = useState(0);
 
