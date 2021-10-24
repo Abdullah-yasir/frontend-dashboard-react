@@ -4,20 +4,21 @@ import {
   Route,
 } from "react-router-dom";
 
+import Dashboard from "../layouts/Dashboard";
+import Submenu from "../layouts/Submenu";
+
+import Scrollable from "../components/Scrollable";
+import ContentEndIndicator from "../components/ContentEndIndicator";
 
 import Login from "../pages/auth/Login";
 import Signup from "../pages/auth/Signup";
-import Status from "../pages/dashboard/Status";
 
+import Status from "../pages/dashboard/Status";
 import Offers from "../pages/dashboard/Offers";
 import Rewards from "../pages/dashboard/Rewards";
+
 import EditProfile from "../pages/dashboard/settings/EditProfile";
-import ContentEndIndicator from "../components/ContentEndIndicator";
-import Scrollable from "../components/Scrollable";
-import Dashboard from "../layouts/Dashboard";
-import Submenu from "../layouts/Submenu";
 import ChangePassword from "../pages/dashboard/settings/ChangePassword";
-import UpdateData from "../pages/dashboard/settings/UpdateDataManual";
 import DeleteAccount from "../pages/dashboard/settings/DeleteAccount";
 import UpdateDataAutomated from "../pages/dashboard/settings/UpdateDataAutomated";
 import UpdateDataManual from "../pages/dashboard/settings/UpdateDataManual";
