@@ -11,11 +11,21 @@ import Status from "../pages/dashboard/Status";
 
 import Offers from "../pages/dashboard/Offers";
 import Rewards from "../pages/dashboard/Rewards";
-import Settings from "../pages/dashboard/Settings";
+import EditProfile from "../pages/dashboard/settings/EditProfile";
 import ContentEndIndicator from "../components/ContentEndIndicator";
 import Scrollable from "../components/Scrollable";
 import Dashboard from "../layouts/Dashboard";
+import Submenu from "../layouts/Submenu";
+import ChangePassword from "../pages/dashboard/settings/ChangePassword";
+import UpdateData from "../pages/dashboard/settings/UpdateData";
+import DeleteAccount from "../pages/dashboard/settings/DeleteAccount";
 
+const settingsRootLinks = [
+  { label: 'Edit Profile', link: '/edit-profile', active: true },
+  { label: 'Change Password', link: '/change-password' },
+  { label: 'Update Data', link: '/update-data' },
+  { label: 'Delete Account', link: '/delete-account' },
+];
 
 
 
@@ -42,7 +52,16 @@ export default function Routes() {
                 </Route>
               </Scrollable>
             </Route>
-            <Route path="/dashboard/settings" component={Settings} />
+            <Route path="/dashboard/settings" >
+              <Submenu baseUrl="/dashboard/settings" links={settingsRootLinks}>
+                <Switch>
+                  <Route path="/dashboard/settings/edit-profile" component={EditProfile} />
+                  <Route path="/dashboard/settings/change-password" component={ChangePassword} />
+                  <Route path="/dashboard/settings/delete-account" component={DeleteAccount} />
+                  <Route path="/dashboard/settings/update-data" component={UpdateData} />
+                </Switch>
+              </Submenu>
+            </Route>
           </Dashboard>
         </Route>
       </Switch>

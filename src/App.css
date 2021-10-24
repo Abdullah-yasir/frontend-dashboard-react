@@ -571,9 +571,16 @@ span.sb-link-label.active {
 .submenu-link-item {
   padding: 10px 20px;
 }
+.submenu-link-item.active,
+.submenu-link-item:hover {
+  background-color: var(--primary-faded);
+  cursor: pointer;
+}
 .submenu-link-item.active {
   border-right: 3px solid var(--primary);
-  background-color: var(--primary-faded);
+}
+.submenu-link {
+  width: 100%;
 }
 .content-footer-container {
   width: 100%;
@@ -591,6 +598,9 @@ span.sb-link-label.active {
   padding: 0 !important;
 }
 .sub-menu {
+}
+.settings-layout {
+  display: flex;
 }
 /* .py-1 {
   padding-top: 10px;
