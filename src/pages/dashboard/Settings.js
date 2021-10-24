@@ -11,10 +11,10 @@ const menuItems = [
 
 const Settings = (props) => {
   return (
-    <section>
-      <div className="settings-layout">
-        <div className="sub-menu">
-          <ul>
+    <section className="full width height" >
+      <div className="settings-layout full height">
+        <div className="sub-menu full height">
+          <ul className="full height no margin">
             {menuItems.map((link) => {
               return (
                 <li>

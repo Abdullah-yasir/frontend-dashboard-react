@@ -2,10 +2,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
 } from "react-router-dom";
 
-import Screen from "../layouts/Screen";
 
 import Login from "../pages/auth/Login";
 import Signup from "../pages/auth/Signup";
@@ -17,7 +15,6 @@ import Settings from "../pages/dashboard/Settings";
 import ContentEndIndicator from "../components/ContentEndIndicator";
 import Scrollable from "../components/Scrollable";
 import Dashboard from "../layouts/Dashboard";
-import NestedRoute from "../components/NestedRoute";
 
 
 
@@ -29,7 +26,6 @@ export default function Routes() {
         <Route exact path="/" component={Login} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />
-
 
         <Route path="/dashboard/">
           <Dashboard>
@@ -49,9 +45,6 @@ export default function Routes() {
             <Route path="/dashboard/settings" component={Settings} />
           </Dashboard>
         </Route>
-
-
-
       </Switch>
     </Router>
   );

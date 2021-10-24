@@ -24,7 +24,7 @@ const Header = (props) => {
 
   return (
     <header>
-      <nav className="header-nav">
+      <nav className="header-nav py-2">
         <div className="nav-left">
           <Link to="/">
             <img className="logo-horizontal" alt="logo horizontal" src={logoHorizontal} />
