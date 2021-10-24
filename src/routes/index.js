@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 } from "react-router-dom";
 
 import Dashboard from "../layouts/Dashboard";
@@ -63,12 +64,14 @@ export default function Routes() {
             <Route path="/dashboard/settings" >
               <Submenu baseUrl="/dashboard/settings" links={settingsRootLinks}>
                 <Switch>
+                  <Redirect exact from="/dashboard/settings" to="/dashboard/settings/edit-profile" />
                   <Route path="/dashboard/settings/edit-profile" component={EditProfile} />
                   <Route path="/dashboard/settings/change-password" component={ChangePassword} />
                   <Route path="/dashboard/settings/delete-account" component={DeleteAccount} />
                   <Route path="/dashboard/settings/update-data">
                     <Submenu title="Update Data" baseUrl="/dashboard/settings/update-data" links={updateDataLinks}>
                       <Switch>
+                        <Redirect exact from="/dashboard/settings/update-data" to="/dashboard/settings/update-data/automated" />
                         <Route path="/dashboard/settings/update-data/automated" component={UpdateDataAutomated} />
                         <Route path="/dashboard/settings/update-data/manual" component={UpdateDataManual} />
                       </Switch>
