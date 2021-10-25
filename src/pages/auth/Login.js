@@ -9,11 +9,12 @@ import DefaultBg from '../../components/DefaultBg';
 import CardSharp from '../../components/CardSharp';
 import OrSeperator from '../../components/OrSeperator';
 import TextField from '../../components/TextFields';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
 const Login = (props) => {
   const { } = props;
+  const history = useHistory();
   return (
     <div className="content-center-h">
       <h1 className='heading-1' style={{ textAlign: 'center' }} >
@@ -26,7 +27,7 @@ const Login = (props) => {
       <div className="manual-login">
         <TextField label="Username" icon="user" />
         <TextField label="Password" type="password" icon="lock" />
-        <button className="button-default" onClick={() => window.location.href = "/dashboard/offers"}>Login</button>
+        <button className="button-default" onClick={() => history.push('/dashboard/page/content/offers')}>Login</button>
         <p style={{ textAlign: 'center' }}>Don’t have an account?<Link to="/auth/signup"> Register Now!</Link></p>
 
       </div>

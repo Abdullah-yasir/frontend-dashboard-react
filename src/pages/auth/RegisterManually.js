@@ -4,12 +4,13 @@ import TextField from '../../components/TextFields';
 import PrivacyAgreement from '../../components/PrivacyAgreement';
 import Seperator from '../../components/Seperator';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
 
 const RegisterManually = (props) => {
   const { } = props;
+  const history = useHistory();
   return (
     <div className="content-center-h">
       <h3 className='heading-1' style={{ textAlign: 'center' }} >
@@ -41,7 +42,7 @@ const RegisterManually = (props) => {
       </div>
       <div className="manual-login flex-column justify-center">
         <PrivacyAgreement />
-        <button className="button-default" onClick={() => window.location.href = "/dashboard/offers"}>Register</button>
+        <button className="button-default" onClick={() => history.push('/login')}>Register</button>
         <p style={{ textAlign: 'center' }}>Already have account?<Link to="/auth/login"> Login!</Link></p>
 
       </div>
