@@ -24,7 +24,7 @@ const Login = (props) => {
           </h1>
           <IconButton label="Sign in with Google" image={googleIcon} style={{ marginBottom: 20 }} />
           <IconButton label="Sign in with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} />
-          <IconButton label="Sign in with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} />
+          {/* <IconButton label="Sign in with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} /> */}
           <OrSeperator />
           <div className="manual-login">
             <TextField label="Username" icon="user" />
