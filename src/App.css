@@ -243,6 +243,7 @@ ul.footer-icons li {
 }
 .text-field-container {
   margin-bottom: 16px;
+  flex: 1;
 }
 .text-field-label {
   color: var(--text-dark);

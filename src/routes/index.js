@@ -23,6 +23,7 @@ import ChangePassword from "../pages/dashboard/settings/ChangePassword";
 import DeleteAccount from "../pages/dashboard/settings/DeleteAccount";
 import UpdateDataAutomated from "../pages/dashboard/settings/UpdateDataAutomated";
 import UpdateDataManual from "../pages/dashboard/settings/UpdateDataManual";
+import Register from "../pages/auth/Register";
 
 const settingsRootLinks = [
   { label: 'Edit Profile', link: '/edit-profile', active: true },
@@ -45,6 +46,7 @@ export default function Routes() {
         <Route exact path="/" component={Login} />
         <Route exact path="/signup" component={Signup} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
 
         <Route path="/dashboard/">
           <Dashboard>
@@ -86,6 +88,12 @@ export default function Routes() {
     </Router>
   );
 }
+/**
+ * TODO
+ * create arrays and loop over it to create routes
+ * use history.push() to set naviage and active class on li
+ */
+
 
 // create seperate app for login and register
 // after successful login and confirmation from server redirect to actual app
