@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import Button from '../../components/Button';
+import PrivacyAgreement from '../../components/PrivacyAgreement';
 import TextField from '../../components/TextFields';
 
 const paragraphs = [
@@ -135,10 +136,7 @@ const PrivacyPolicy = (props) => {
           This policy was last updated on 3/02/2021.
         </p>
       </div>
-      <div className="radio-btn" style={{ justifyContent: 'center', marginBottom: 15 }}>
-        <input className="radio-icon" name='agreement' type="checkbox" />
-        <label className="radio-label" for="agreement">I agree to the Terms and Conditions. </label>
-      </div>
+      <PrivacyAgreement />
       <Button label="Continue" style={{ margin: '0 auto' }} onClick={() => window.location.href = '/dashboard/offers'} />
     </div>
   )

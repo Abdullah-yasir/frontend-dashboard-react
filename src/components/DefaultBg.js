@@ -1,6 +1,6 @@
 import React from 'react';
-import bgLeft from '../assets/bg-left.png';
-import bgRight from '../assets/bg-right.png';
+import bgLeft from '../assets/bg-left.svg';
+import bgRight from '../assets/bg-right.svg';
 
 const DefaultBg = (props) => {
   const { children } = props;

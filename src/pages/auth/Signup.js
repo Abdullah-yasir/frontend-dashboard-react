@@ -29,8 +29,16 @@ const Signup = (props) => {
           <IconButton label="Signup with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} />
           {/* <IconButton label="Signup with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} /> */}
           <OrSeperator />
-          <button className="button-default" onClick={() => { history.push('/register') }} >Register Manually</button>
-          <p style={{ textAlign: 'center' }}>Already have an account?<Link href="/login"> Login!</Link></p>
+          <button
+            className="button-default"
+            onClick={() => {
+              history.push('/register')
+            }} >
+            Register Manually
+          </button>
+          <p style={{ textAlign: 'center' }}>
+            Already have an account?<Link to="/login"> Login!</Link>
+          </p>
         </div>
       </CardSharp>
     </DefaultBg >

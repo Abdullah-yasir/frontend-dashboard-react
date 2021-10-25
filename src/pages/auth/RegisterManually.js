@@ -5,6 +5,8 @@ import logoTextCenter from '../../assets/dataLucent-logo-text-translucent-center
 import DefaultBg from '../../components/DefaultBg';
 import CardSharp from '../../components/CardSharp';
 import TextField from '../../components/TextFields';
+import PrivacyAgreement from '../../components/PrivacyAgreement';
+
 import { Link } from 'react-router-dom';
 
 const Seperator = (props) => {
@@ -47,8 +49,8 @@ const RegisterManually = (props) => {
             <Seperator />
             <TextField label="Re-type Password" type="password" icon="lock" />
           </div>
-          <div className="manual-login">
-
+          <div className="manual-login flex-column justify-center">
+            <PrivacyAgreement />
             <button className="button-default" onClick={() => window.location.href = "/dashboard/offers"}>Register</button>
             <p style={{ textAlign: 'center' }}>Already have account?<Link to="/login"> Login!</Link></p>
 

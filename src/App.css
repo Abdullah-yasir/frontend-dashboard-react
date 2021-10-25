@@ -51,7 +51,7 @@ a {
 ::-webkit-scrollbar-track {
   border-radius: 10px;
   background: #e0e0e0;
-  margin-bottom: 104px;
+  /* margin-bottom: 104px; */
 }
 
 /* Handle */
@@ -158,9 +158,12 @@ ul.footer-icons li {
 .manual-login {
   width: 288px;
 }
-.button-default {
-  height: 50px;
+.button-default,
+.icon-button {
+  height: 45px;
   width: 288px;
+}
+.button-default {
   background-color: var(--primary);
   border: 1px solid var(--primary);
   border-radius: 100px;
@@ -171,8 +174,6 @@ ul.footer-icons li {
 }
 .icon-button {
   display: flex;
-  height: 50px;
-  width: 288px;
   border-radius: 100px;
   border: 1px solid var(--text-dark);
   align-items: center;
@@ -602,6 +603,13 @@ span.sb-link-label.active {
 }
 .settings-layout {
   display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-column.justify-center {
+  align-items: center;
 }
 /* .py-1 {
   padding-top: 10px;
