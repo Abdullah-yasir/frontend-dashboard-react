@@ -551,7 +551,6 @@ span.sb-link-label.active {
 .footer-line {
   border-bottom: 1px solid var(--line-faded);
   margin: 10px 0;
-  width: 100%;
 }
 .footer-icon {
   width: 50px;
@@ -566,11 +565,13 @@ span.sb-link-label.active {
   font-weight: 400;
   margin-bottom: 10px;
 }
-.submenu-link-item {
-  width: 100%;
-}
 .submenu-title,
 .submenu-link-item {
+  padding: 10px 20px;
+}
+.submenu-link-item {
+  display: flex;
+  flex: 1;
   padding: 10px 20px;
 }
 .submenu-link-item.active,
@@ -581,15 +582,14 @@ span.sb-link-label.active {
 .submenu-link-item.active {
   border-right: 3px solid var(--primary);
 }
-.submenu-link {
+.submenu-link,
+.content-footer-container,
+.full.width,
+.submenu-link-item,
+.footer-line {
   width: 100%;
 }
-.content-footer-container {
-  width: 100%;
-}
-.full.width {
-  width: 100%;
-}
+
 .full.height {
   height: 100%;
 }

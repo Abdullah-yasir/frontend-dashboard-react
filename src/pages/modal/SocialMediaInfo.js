@@ -14,7 +14,7 @@ const SocialMediaInfo = (props) => {
       <div className="creds-input-fields">
         <TextField label="Username" icon="user" />
         <Seperator />
-        <TextField label="Pasword" icon="password" />
+        <TextField label="Pasword" icon="lock" />
       </div>
       <Button label="Continue" style={{ marginLeft: 'auto' }} onClick={() => history.push("/privacy")} />
     </div>
