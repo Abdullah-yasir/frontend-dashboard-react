@@ -20,7 +20,7 @@ const Modal = (props) => {
             className="modal-close"
             onClick={() => {
               // dispatch(showModal(false))
-              window.location.href = '/dashboard/offers';
+              window.location.href = '/dashboard/page/content/offers';
             }}
           />
           <div className="modal-logo-top">

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router';
 import { showModal } from '../store/actions';
 
 import Button from '../components/Button';
