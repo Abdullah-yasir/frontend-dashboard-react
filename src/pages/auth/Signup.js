@@ -10,6 +10,7 @@ import DefaultBg from '../../components/DefaultBg';
 import CardSharp from '../../components/CardSharp';
 import OrSeperator from '../../components/OrSeperator';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Signup = (props) => {
   const history = useHistory();
@@ -29,7 +30,7 @@ const Signup = (props) => {
           {/* <IconButton label="Signup with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} /> */}
           <OrSeperator />
           <button className="button-default" onClick={() => { history.push('/register') }} >Register Manually</button>
-          <p style={{ textAlign: 'center' }}>Already have an account?<a href="/login"> Login!</a></p>
+          <p style={{ textAlign: 'center' }}>Already have an account?<Link href="/login"> Login!</Link></p>
         </div>
       </CardSharp>
     </DefaultBg >

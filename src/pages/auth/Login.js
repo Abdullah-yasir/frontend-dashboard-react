@@ -10,6 +10,7 @@ import DefaultBg from '../../components/DefaultBg';
 import CardSharp from '../../components/CardSharp';
 import OrSeperator from '../../components/OrSeperator';
 import TextField from '../../components/TextFields';
+import { Link } from 'react-router-dom';
 
 
 const Login = (props) => {
@@ -30,7 +31,7 @@ const Login = (props) => {
             <TextField label="Username" icon="user" />
             <TextField label="Password" type="password" icon="lock" />
             <button className="button-default" onClick={() => window.location.href = "/dashboard/offers"}>Login</button>
-            <p style={{ textAlign: 'center' }}>Don’t have an account?<a href="/signup"> Register Now!</a></p>
+            <p style={{ textAlign: 'center' }}>Don’t have an account?<Link to="/signup"> Register Now!</Link></p>
 
           </div>
         </div>
