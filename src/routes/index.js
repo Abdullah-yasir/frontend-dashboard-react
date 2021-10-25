@@ -13,6 +13,7 @@ import ContentEndIndicator from "../components/ContentEndIndicator";
 
 import Login from "../pages/auth/Login";
 import Signup from "../pages/auth/Signup";
+import Register from "../pages/auth/RegisterManually";
 
 import Status from "../pages/dashboard/Status";
 import Offers from "../pages/dashboard/Offers";
@@ -23,7 +24,6 @@ import ChangePassword from "../pages/dashboard/settings/ChangePassword";
 import DeleteAccount from "../pages/dashboard/settings/DeleteAccount";
 import UpdateDataAutomated from "../pages/dashboard/settings/UpdateDataAutomated";
 import UpdateDataManual from "../pages/dashboard/settings/UpdateDataManual";
-import Register from "../pages/auth/Register";
 
 const settingsRootLinks = [
   { label: 'Edit Profile', link: '/edit-profile', active: true },

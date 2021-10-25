@@ -5,6 +5,7 @@ import logoTextCenter from '../../assets/dataLucent-logo-text-translucent-center
 import DefaultBg from '../../components/DefaultBg';
 import CardSharp from '../../components/CardSharp';
 import TextField from '../../components/TextFields';
+import { Link } from 'react-router-dom';
 
 const Seperator = (props) => {
   const { vertical } = props;
@@ -12,7 +13,7 @@ const Seperator = (props) => {
   return <div style={styles} />
 }
 
-const Register = (props) => {
+const RegisterManually = (props) => {
   const { } = props;
   return (
     <DefaultBg>
@@ -49,7 +50,7 @@ const Register = (props) => {
           <div className="manual-login">
 
             <button className="button-default" onClick={() => window.location.href = "/dashboard/offers"}>Register</button>
-            <p style={{ textAlign: 'center' }}>Already have account?<a href="/register"> Login!</a></p>
+            <p style={{ textAlign: 'center' }}>Already have account?<Link to="/login"> Login!</Link></p>
 
           </div>
         </div>
@@ -58,4 +59,4 @@ const Register = (props) => {
   );
 }
 
-export default Register;
+export default RegisterManually;
