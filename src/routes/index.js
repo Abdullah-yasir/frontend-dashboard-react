@@ -19,11 +19,16 @@ import Status from "../pages/dashboard/Status";
 import Offers from "../pages/dashboard/Offers";
 import Rewards from "../pages/dashboard/Rewards";
 
+import logoTextCenter from '../assets/dataLucent-logo-text-translucent-center.png';
+
+
 import EditProfile from "../pages/dashboard/settings/EditProfile";
 import ChangePassword from "../pages/dashboard/settings/ChangePassword";
 import DeleteAccount from "../pages/dashboard/settings/DeleteAccount";
 import UpdateDataAutomated from "../pages/dashboard/settings/UpdateDataAutomated";
 import UpdateDataManual from "../pages/dashboard/settings/UpdateDataManual";
+import DefaultBg from "../components/DefaultBg";
+import CardSharp from "../components/CardSharp";
 
 const settingsRootLinks = [
   { label: 'Edit Profile', link: '/edit-profile', active: true },
@@ -43,10 +48,20 @@ export default function Routes() {
   return (
     <Router basename="/">
       <Switch>
-        <Route exact path="/" component={Login} />
-        <Route exact path="/signup" component={Signup} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Register} />
+        <Redirect exact from="/" to="/auth/login" />
+        <Route path="/auth">
+          <DefaultBg>
+            <img alt="datalucent logo text center" src={logoTextCenter} className="logo-text-center" />
+
+            <CardSharp style={{ width: 500 }}>
+              <Switch>
+                <Route exact path="/auth/signup" component={Signup} />
+                <Route exact path="/auth/login" component={Login} />
+                <Route exact path="/auth/register" component={Register} />
+              </Switch>
+            </CardSharp>
+          </DefaultBg>
+        </Route>
 
         <Route path="/dashboard/">
           <Dashboard>
