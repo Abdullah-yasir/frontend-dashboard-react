@@ -612,6 +612,20 @@ span.sb-link-label.active {
 .flex-column.justify-center {
   align-items: center;
 }
+.justify-btw {
+  justify-content: space-between;
+}
+.status-card {
+  width: 400px;
+}
+.status-labels {
+  text-align: right;
+  margin-right: 10px;
+}
+.status-labels p:first-child,
+.status-values p:first-child {
+  margin-top: 0;
+}
 /* .py-1 {
   padding-top: 10px;
   padding-bottom: 10px;
