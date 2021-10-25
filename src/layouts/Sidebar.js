@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
 import { showModal } from '../store/actions';
@@ -41,15 +41,15 @@ const Sidebar = (props) => {
   const renderLinks = (link, index) => {
     const activeClass = index === activeIndex ? 'active' : '';
     return (
-      <li className={`sidebar-link ${activeClass}`} onClick={() => { setActiveIndex(index) }}>
-        <Link to={link.link}>
+      <li onClick={() => { setActiveIndex(index) }}>
+        <NavLink className="sidebar-link" to={link.link} activeClassName="active">
           <div className="sb-link-content">
             <span className="sb-link-icon-container">
               <FontAwesomeIcon className={`sb-link-icon ${activeClass}`} icon={["fas", link.icon]} />
             </span>
             <span className={`sb-link-label ${activeClass}`}>{link.label}</span>
           </div>
-        </Link>
+        </NavLink>
       </li>
     )
   }
