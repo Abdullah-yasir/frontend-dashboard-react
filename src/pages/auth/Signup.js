@@ -3,6 +3,7 @@ import React from 'react';
 import googleIcon from '../../assets/google-icon.png';
 import linkedinIcon from '../../assets/linkedin-icon.png';
 import amazonIcon from '../../assets/amazon-icon.png';
+import facebookIcon from '../../assets/facebook-icon.png';
 
 import IconButton from '../../components/IconButton';
 
@@ -22,7 +23,8 @@ const Signup = (props) => {
         You will be sharing the data from the account you choose. DataLucent is committed to transparency regarding your data. Check out our <a href="/">Privacy Policy</a> for more info.
       </p>
       <IconButton label="Signup with Google" image={googleIcon} style={{ marginBottom: 20 }} />
-      <IconButton label="Signup with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} />
+      <IconButton label="Login with Facebook" image={facebookIcon} style={{ marginBottom: 20 }} />
+      {/* <IconButton label="Signup with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} /> */}
       {/* <IconButton label="Signup with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} /> */}
       <OrSeperator />
       <button

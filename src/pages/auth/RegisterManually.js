@@ -42,7 +42,7 @@ const RegisterManually = (props) => {
       </div>
       <div className="manual-login flex-column justify-center">
         <PrivacyAgreement />
-        <button className="button-default" onClick={() => history.push('/login')}>Register</button>
+        <button className="button-default" onClick={() => history.push('/auth/login')}>Register</button>
         <p style={{ textAlign: 'center' }}>Already have account?<Link to="/auth/login"> Login!</Link></p>
 
       </div>

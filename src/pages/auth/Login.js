@@ -3,6 +3,7 @@ import React from 'react';
 import googleIcon from '../../assets/google-icon.png';
 import linkedinIcon from '../../assets/linkedin-icon.png';
 import amazonIcon from '../../assets/amazon-icon.png';
+import facebookIcon from '../../assets/facebook-icon.png';
 
 import IconButton from '../../components/IconButton';
 import DefaultBg from '../../components/DefaultBg';
@@ -20,8 +21,9 @@ const Login = (props) => {
       <h1 className='heading-1' style={{ textAlign: 'center' }} >
         Sign In
       </h1>
-      <IconButton label="Sign in with Google" image={googleIcon} style={{ marginBottom: 20 }} />
-      <IconButton label="Sign in with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} />
+      <IconButton label="Login with Google" image={googleIcon} style={{ marginBottom: 20 }} />
+      {/* <IconButton label="Login with Linkedin" image={linkedinIcon} style={{ marginBottom: 20, backgroundColor: '#0077B7', borderColor: 'white' }} labelStyle={{ color: 'white' }} /> */}
+      <IconButton label="Login with Facebook" image={facebookIcon} style={{ marginBottom: 20 }} />
       {/* <IconButton label="Sign in with Amazon" image={amazonIcon} style={{ backgroundColor: '#F6C950', borderColor: 'white' }} /> */}
       <OrSeperator />
       <div className="manual-login">
