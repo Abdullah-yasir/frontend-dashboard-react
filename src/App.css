@@ -617,6 +617,7 @@ span.sb-link-label.active {
 }
 .status-card {
   width: 400px;
+  padding: 10px;
 }
 .status-labels {
   text-align: right;

@@ -5,11 +5,12 @@ import googleIcon from '../assets/google-icon.svg';
 import linkedinIcon from '../assets/linkedin-icon.svg';
 import facebookIcon from '../assets/facebook-icon.svg';
 import twitterIcon from '../assets/twitter-icon.svg';
+import Button from './Button';
 
 const labels = ['Social Media Date File', 'Last Uploaded', 'Status', 'Type'];
 
 const StatusCard = (props) => {
-  const { values = [], brand } = props;
+  const { values = [], brand, type } = props;
 
   let brandIcon = null;
   switch (brand) {
@@ -49,6 +50,7 @@ const StatusCard = (props) => {
           <img src={brandIcon} alt="brand icon" />
         </div>
       </div>
+      <Button label={values[3] === 'Automated' ? 'Run Now' : 'Upload File'} className="button button-outline-primary" style={{ marginLeft: 'auto' }} />
     </Card>
   )
 }
