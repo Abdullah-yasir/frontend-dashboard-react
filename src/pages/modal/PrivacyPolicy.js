@@ -137,7 +137,7 @@ const PrivacyPolicy = (props) => {
         </p>
       </div>
       <PrivacyAgreement />
-      <Button label="Continue" style={{ margin: '0 auto' }} onClick={() => window.location.href = '/dashboard/offers'} />
+      <Button label="Continue" style={{ margin: '0 auto' }} onClick={() => window.location.href = '/dashboard/page/content/offers'} />
     </div>
   )
 }
