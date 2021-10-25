@@ -510,11 +510,15 @@ span.sb-link-label.active {
   -moz-box-shadow: 2px 3px 4px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 3px 4px -5px rgba(0, 0, 0, 0.75);
 }
+.offer-card,
+.status-card {
+  margin: 5px;
+}
 .offer-card {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  margin: 5px;
+
   width: 350px;
   opacity: 0.9;
 }
@@ -615,8 +619,11 @@ span.sb-link-label.active {
 .justify-btw {
   justify-content: space-between;
 }
+.status-details {
+  margin-right: 5px;
+}
 .status-card {
-  width: 400px;
+  width: 410px;
   padding: 10px;
 }
 .status-labels {

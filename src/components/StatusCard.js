@@ -10,20 +10,20 @@ import Button from './Button';
 const labels = ['Social Media Date File', 'Last Uploaded', 'Status', 'Type'];
 
 const StatusCard = (props) => {
-  const { values = [], brand, type } = props;
+  const { values = [], brand } = props;
 
   let brandIcon = null;
-  switch (brand) {
-    case 'google':
+  switch (values[0]) {
+    case 'Google':
       brandIcon = googleIcon;
       break;
-    case 'linkedin':
+    case 'Linkedin':
       brandIcon = linkedinIcon;
       break;
-    case 'facebook':
+    case 'Facebook':
       brandIcon = facebookIcon;
       break;
-    case 'twitter':
+    case 'Twitter':
       brandIcon = twitterIcon;
       break;
 

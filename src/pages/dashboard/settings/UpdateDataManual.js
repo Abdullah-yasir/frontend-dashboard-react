@@ -4,9 +4,9 @@ import StatusCard from '../../../components/StatusCard';
 
 const UpdateDataManual = (props) => {
   return (
-    <section className="full width height" >
+    <section className="full width height" style={{ padding: 20 }}>
       <Scrollable>
-        <StatusCard values={['LinkedIn', '2021-10-16', 'Successfully Uploaded', 'Automated']} brand="linkedin" />
+        <StatusCard values={['LinkedIn', '2021-10-16', 'Successfully Uploaded', 'Manual']} brand="linkedin" />
       </Scrollable>
     </section>
   );
