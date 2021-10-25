@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { NavLink, useRouteMatch, useHistory } from 'react-router-dom';
 import TitleBar from '../components/TitleBar';
@@ -17,7 +18,7 @@ const Submenu = (props) => {
             return (
               <li >
                 <NavLink to={baseUrl + link.link} className="submenu-link-item submenu-link" activeClassName="active">
-                  {link.label}
+                  <div className="submenu-item" ><span>{link.label}</span><FontAwesomeIcon icon={['fas', 'angle-right']} /></div>
                 </NavLink>
               </li>
             )

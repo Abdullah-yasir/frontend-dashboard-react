@@ -634,6 +634,12 @@ span.sb-link-label.active {
 .status-values p:first-child {
   margin-top: 0;
 }
+.submenu-item {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
 /* .py-1 {
   padding-top: 10px;
   padding-bottom: 10px;
