@@ -29,6 +29,8 @@ import UpdateDataAutomated from "../pages/dashboard/settings/UpdateDataAutomated
 import UpdateDataManual from "../pages/dashboard/settings/UpdateDataManual";
 import DefaultBg from "../components/DefaultBg";
 import CardSharp from "../components/CardSharp";
+import Home from "../layouts/Home";
+import Survey from "../pages/Survey";
 
 const settingsRootLinks = [
   { label: 'Edit Profile', link: '/edit-profile', active: true },
@@ -52,7 +54,6 @@ export default function Routes() {
         <Route path="/auth">
           <DefaultBg>
             <img alt="datalucent logo text center" src={logoTextCenter} className="logo-text-center" />
-
             <CardSharp style={{ width: 500 }}>
               <Switch>
                 <Route exact path="/auth/signup" component={Signup} />
@@ -61,6 +62,12 @@ export default function Routes() {
               </Switch>
             </CardSharp>
           </DefaultBg>
+        </Route>
+
+        <Route exact path="/survey">
+          <Home>
+            <Survey />
+          </Home>
         </Route>
 
         <Route path="/dashboard/">

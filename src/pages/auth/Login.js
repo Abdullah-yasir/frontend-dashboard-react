@@ -29,7 +29,7 @@ const Login = (props) => {
       <div className="manual-login">
         <TextField label="Username" icon="user" />
         <TextField label="Password" type="password" icon="lock" />
-        <button className="button-default" onClick={() => history.push('/dashboard/page/content/offers')}>Login</button>
+        <button className="button-default" onClick={() => history.push('/survey')}>Login</button>
         <p style={{ textAlign: 'center' }}>Don’t have an account?<Link to="/auth/signup"> Register Now!</Link></p>
 
       </div>

@@ -6,7 +6,7 @@ import Home from './Home';
 import Sidebar from './Sidebar';
 
 const Dashboard = (props) => {
-  const { children, match } = props;
+  const { children } = props;
   return (
     <Home>
       <aside className="content-left">
@@ -14,7 +14,6 @@ const Dashboard = (props) => {
       </aside>
       <main className="content-right">
         <CornerBg>
-
           {children}
         </CornerBg>
       </main>
