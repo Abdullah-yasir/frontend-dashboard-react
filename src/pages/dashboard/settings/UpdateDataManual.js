@@ -1,12 +1,22 @@
 import React from 'react';
 import Scrollable from '../../../components/Scrollable';
+import Seperator from '../../../components/Seperator';
 import StatusCard from '../../../components/StatusCard';
+
+const status = [
+  { brand: 'google', values: ['Google', '2021-10-16', 'Successfully Uploaded', 'Manual'] },
+  { brand: 'linkedin', values: ['Linkedin', '2021-10-16', 'Successfully Uploaded', 'Manual'] },
+  { brand: 'facebook', values: ['Facebook', '2021-10-16', 'Successfully Uploaded', 'Manual'] },
+  { brand: 'twitter', values: ['Twitter', '2021-10-16', 'Successfully Uploaded', 'Manual'] }
+
+]
 
 const UpdateDataManual = (props) => {
   return (
-    <section className="full width height" style={{ padding: 20 }}>
+    <section className="full width height" >
       <Scrollable>
-        <StatusCard values={['LinkedIn', '2021-10-16', 'Successfully Uploaded', 'Manual']} brand="linkedin" />
+        {status.map((status) => <StatusCard values={status.values} brand={status.brand} />)}
+        <Seperator vertical space={400} />
       </Scrollable>
     </section>
   );
