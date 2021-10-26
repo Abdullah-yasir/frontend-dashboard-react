@@ -22,7 +22,7 @@ const Submenu = (props) => {
           })}
         </ul>
       </div>
-      <div className="settings-content">
+      <div className="settings-content full width height">
         {children}
       </div>
     </div>

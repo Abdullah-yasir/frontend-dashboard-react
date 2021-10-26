@@ -640,6 +640,16 @@ span.sb-link-label.active {
   justify-content: space-between;
   align-items: center;
 }
+.image-rounded {
+  border-radius: 50%;
+}
+.image-rounded img {
+  width: 100px;
+  height: 100px;
+}
+.width-700 {
+  max-width: 700px;
+}
 /* .py-1 {
   padding-top: 10px;
   padding-bottom: 10px;
