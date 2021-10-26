@@ -653,13 +653,16 @@ span.sb-link-label.active {
   max-width: 700px;
 }
 .big-size {
-  font-size: 74px;
+  font-size: 64px;
 }
 .bg.white.faded {
   background-color: rgba(255, 255, 255, 0.35);
 }
 .p-4 {
   padding: 40px;
+}
+.p-2 {
+  padding: 20px;
 }
 .flex.center.all {
   display: flex;

@@ -10,7 +10,7 @@ const ChangePassword = (props) => {
     <section className="full width height" >
       <div className="content-center-h">
         <Seperator vertical />
-        <div className="image-rounded  bg white faded p-4 flex center all">
+        <div className="image-rounded  bg white faded p-2 flex center all">
           <FontAwesomeIcon icon={['fas', 'lock']} className="big-size color-primary faded" />
         </div>
         <Seperator vertical />
