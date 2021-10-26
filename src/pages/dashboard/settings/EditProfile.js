@@ -33,6 +33,7 @@ const EditProfile = (props) => {
             <TextField label="Address" value="Street ABC, city XYZ, country USA" icon="map-marker-alt" />
           </div>
         </div>
+        <Seperator vertical />
         <Button label="Save Changes" className="button button-outline-primary" />
       </div>
     </section>
