@@ -563,7 +563,7 @@ span.sb-link-label.active {
   width: 50px;
 }
 .sub-menu {
-  width: 200px;
+  width: 250px;
   border-right: 1px solid var(--line-faded);
   background-color: rgba(255, 255, 255, 0.9);
 }
