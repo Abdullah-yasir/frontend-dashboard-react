@@ -20,7 +20,7 @@ const DeleteAccount = (props) => {
           <div className=" content-center-h">
             <div className="buttons-row">
               <Button label="Cancel" classes="button-outline group-button" />
-              <Button label="Delete Account" classes="button-outline-primary group-button" />
+              <Button label="Delete Account" classes="button-outline button-outline-danger group-button" />
             </div>
           </div>
         </div>

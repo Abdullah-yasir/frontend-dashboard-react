@@ -3,6 +3,7 @@
   --primary-faded: #19a79b13;
   --primary: #19a79a;
   --line-faded: #e0e0e0;
+  --danger: tomato;
 }
 
 body {
@@ -382,6 +383,14 @@ span.sb-link-label.active {
 .button-outline-primary {
   border-color: 1px solid var(--primary);
   color: var(--primary);
+}
+.button-outline-danger {
+  border-color: 1px solid var(--danger);
+  color: var(--danger);
+}
+.button-outline-danger:hover {
+  background-color: var(--danger);
+  color: white;
 }
 .button-outline-primary:hover {
   background-color: var(--primary);
