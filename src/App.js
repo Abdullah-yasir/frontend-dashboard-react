@@ -4,7 +4,7 @@ import React from 'react';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faHandHoldingUsd, faMedal, faCog, faHourglassEnd, faPlus, faTimes, faUser, faLock, faEnvelope, faCaretDown, faMapMarkerAlt, faGraduationCap, faAngleRight
+  faHandHoldingUsd, faMedal, faCog, faHourglassEnd, faPlus, faTimes, faUser, faLock, faEnvelope, faCaretDown, faMapMarkerAlt, faGraduationCap, faAngleRight, faTrash
 } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faInstagramSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { Provider } from 'react-redux';
@@ -31,7 +31,8 @@ library.add(
   faCaretDown,
   faMapMarkerAlt,
   faGraduationCap,
-  faAngleRight
+  faAngleRight,
+  faTrash
 );
 
 function App() {
