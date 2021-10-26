@@ -13,6 +13,8 @@ const ChangePassword = (props) => {
         <div className="image-rounded  bg white faded p-2 flex center all">
           <FontAwesomeIcon icon={['fas', 'lock']} className="big-size color-primary faded" />
         </div>
+        <h1 style={{ marginVertical: 10 }}>Change Password</h1>
+        <p className="no margin">Here you can change password for your DataLucent account.</p>
         <Seperator vertical />
         <div className="width-700">
           <div className="flex-row-wrap full width">
